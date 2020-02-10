@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StacksBasics",
+            "request": "launch",
+            "mainClass": "StacksBasics"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HashMapBasics",
             "request": "launch",
             "mainClass": "HashMapBasics"
