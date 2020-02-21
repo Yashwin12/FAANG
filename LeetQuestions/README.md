@@ -1,4 +1,2 @@
-# Leetcode-Questions
-Leetcode question list by companies, include the premium questions.
-
-Last updated- 2nd December 2019
+# Leet-Questions
+Leet question list by companies, include the premium questions.
