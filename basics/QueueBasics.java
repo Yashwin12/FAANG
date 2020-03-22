@@ -1,5 +1,6 @@
 import java.util.*;
 
+// We can insert the null value into the LinkedList but couldn't insert it into the Queue , despite implementing Queue by LinkedList 
 class QueueBasics{
     public static void main(String[] args){
         Deque<Integer> queueObj = new LinkedList<>(); 
