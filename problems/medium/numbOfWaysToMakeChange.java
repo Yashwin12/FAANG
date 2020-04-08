@@ -20,21 +20,45 @@
 // Without 2:
 // [1+1+1+1+1]
 
-// T: O(denoms * n) | S: O(n); where n = target value.
+// 1) T: O (denoms * n); S: O(denoms * n)
+// class Program {
+//     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
+
+//         int[][] mat = new int[denoms.length + 1][n + 1];
+
+//         for (int i = 0; i <= denoms.length; i++) {
+//             mat[i][0] = 1;
+//         }
+
+//         for (int row = 1; row <= denoms.length; row++) {
+//             for (int col = 1; col <= n; col++) {
+
+//                 if (col >= denoms[row - 1]) {
+//                     mat[row][col] = mat[row - 1][col] + mat[row][col - denoms[row - 1]];
+//                 } else {
+//                     mat[row][col] = mat[row - 1][col];
+//                 }
+//             }
+//         }
+//         return mat[denoms.length][n];
+//     }
+// }
+
+// The below method is similar to algoexperts'
+// 2) T: O(denoms * n) | S: O(n); where n = target value.
 class Program {
     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
-          int[] ways = new int[n + 1];
-          ways[0] = 1;
-          
-          for (int i = 0; i < denoms.length; i++){
-              for (int amount = 0; amount < ways.length; amount++){
-                  
-                  if( amount >= denoms[i] ){
-                      ways[amount] += ways [amount - denoms[i]];
-                  }
-              }
-          }
-      return ways[n];
+        int[] ways = new int[n + 1];
+        ways[0] = 1;
+
+        for (int i = 0; i < denoms.length; i++) {
+            for (int amount = 0; amount < ways.length; amount++) {
+
+                if (amount >= denoms[i]) {
+                    ways[amount] += ways[amount - denoms[i]];
+                }
+            }
+        } 
+        return ways[n];
     }
-  }
-  
+}
