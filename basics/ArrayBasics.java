@@ -32,5 +32,8 @@ class ArrayBasics{
         // 7)  converts array to a string
         arr.toString();
 
+        // 8) Replace value at a specific index
+        a.set(0, 100); // replaces 0th element with 100;
+
     }
 }

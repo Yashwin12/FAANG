@@ -47,5 +47,17 @@ class HashMapBasics{
 
         // 9) Removes all of the mappings from this map.
         hashMapObj.clear();
+
+        //10) Two ways to iterate through all the key and values in the map
+        for (String key: hashMapObj.keySet()) {
+            System.out.println("key : " + key);
+            System.out.println("value : " + map.get(key));
+        }
+        //              OR
+        for(Entry<String, Integer> entry: map.entrySet()) {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+        
     }
 }

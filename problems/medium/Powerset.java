@@ -1,4 +1,5 @@
-// 1) Recursion T:O ( 2^n * n ) 
+// 1) INEFFICIENT Recursion T:O( 2^n * 2^n * n ) | S: O(2^n * n)
+// checkArrayObjPresent gets called 2^n times and powerset arrayObj have at max 2^n, so 2^n * 2^n elements. 
 // import java.util.*;
 
 // class Program {
