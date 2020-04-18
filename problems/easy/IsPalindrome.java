@@ -34,7 +34,8 @@
 //   }
 // }
 
-// 3) T: O(n) |S: O(n)
+// 3) T: O(n) |S: O(n) 
+// HACK: String vs StringBuilder() https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java
 // class Program {
 //   public static boolean isPalindrome(String str) {
 // 		String reverseStr = new StringBuilder(str).reverse().toString();

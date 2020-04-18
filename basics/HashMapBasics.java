@@ -31,7 +31,7 @@ class HashMapBasics{
 
             // 6) Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
             System.out.println(hashMapObj.get("key1"));
-            //Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.
+            //Returns the value to which the specified key (key3 over here) is mapped, or default Value will be three if this map contains no mapping for that key.
             System.out.println(hashMapObj.getOrDefault("key3", "three") );
         }
 

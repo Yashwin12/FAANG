@@ -11,13 +11,13 @@
 
 // Can be broken down as: 
 
-// With 2:
+// -> With 2 ( table[row][col - coins[row-1] ):
 // Deduct 2 from amount 5, then you have. sub problem which is:
 // Amount 3, with coins [1,2]
-// [1+1+1] = 3. Now just add 2 to it ==> [1+1+1+2] = 5
-// [2+1] = 3. Now just add 2 to it ==> [2+1+2] = 5
+    // ------> Without 2 [1+1+1] = 3. Now just add 2 to it ==> [1+1+1+2] = 5
+    // ------> With 2 [2+1] = 3. Now just add 2 to it ==> [2+1+2] = 5
 
-// Without 2:
+// -> Without 2 ( table[row-1][col] ):
 // [1+1+1+1+1]
 
 // 1) T: O (denoms * n); S: O(denoms * n)
