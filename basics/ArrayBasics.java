@@ -28,12 +28,25 @@ class ArrayBasics{
 
         // 6) Sorts with the help of  Dual-Pivot Quicksort. O(n log(n)) performance   
         Arrays.sort(arr);
+            // OR
         
+        Foo fooObj = new Foo();     
+        Collections.sort(new ArrayList<Foo>(), new Comparator (){
+            public int compare(Object o1, Object o2) {
+                // some complex logic over here for sorting.
+            }   
+        });
+
+        // Array sorting in reverse order
+        Arrays.sort(arr, Collections.reverseOrder()); 
+
         // 7)  converts array to a string
         arr.toString();
 
         // 8) Replace value at a specific index
         a.set(0, 100); // replaces 0th element with 100;
 
+        // 9) Sometimes while printing array one gets weird memory address by : System.out.println( arr );
+        System.out.println( Arrays.toString( arr ) ); // This would print the whole god damn array :)
     }
 }

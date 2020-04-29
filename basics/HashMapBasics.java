@@ -1,5 +1,10 @@
 import java.util.*;
 
+// HashMap doesn’t maintain any order. Allows 1 null key and (more than 1) null values.
+// TreeMap sort the entries in ascending order of keys. Doesnt allow null key, but multiple null values is fine. 
+// LinkedHashMap maintains the insertion order. Allows null key and (more than 1) null values.
+
+// DUPLICATE KEYS ARE NOT ALLOWED IN ANY OF THE MAP.
 class HashMapBasics{
     public static void main (String[] args){
 
@@ -58,6 +63,8 @@ class HashMapBasics{
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
-        
+
+        // 11)IMPORTANT: It stores key-value pairs similar to like "HashMap". It allows "only distinct keys". Duplicate keys are not possible. It cannot have null key but can have multiple null values.
+        Map<Integer, Integer> m = new TreeMap<>(); 
     }
 }

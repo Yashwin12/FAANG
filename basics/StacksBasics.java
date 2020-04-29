@@ -1,5 +1,6 @@
 import java.util.*;
 
+// LIFO 
 class StacksBasics{
     public static void main(String[] args){
         Stack<Integer> stackObj = new Stack<>();

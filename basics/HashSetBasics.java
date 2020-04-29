@@ -15,6 +15,9 @@ public class HashSetBasics {
         Iterator<Integer> i = set.iterator(); 
         while (i.hasNext()) 
             System.out.println(i.next()); 
+            // OR
+        for( int ele : set)
+            System.out.println( ele ); 
 
         // 4) Returns true if this set contains the specified element.
         set.contains(21); // returns true as 21 is still in set.
