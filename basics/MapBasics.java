@@ -5,7 +5,7 @@ import java.util.*;
 // LinkedHashMap maintains the insertion order. Allows null key and (more than 1) null values.
 
 // DUPLICATE KEYS ARE NOT ALLOWED IN ANY OF THE MAP.
-class HashMapBasics{
+class MapBasics{
     public static void main (String[] args){
 
         HashMap<String, String> hashMapObj = new HashMap<>();
@@ -59,12 +59,16 @@ class HashMapBasics{
             System.out.println("value : " + map.get(key));
         }
         //              OR
-        for(Entry<String, Integer> entry: map.entrySet()) {
+        for(Entry<String, Integer> entry: hashMapObj.entrySet()) {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         }
 
         // 11)IMPORTANT: It stores key-value pairs similar to like "HashMap". It allows "only distinct keys". Duplicate keys are not possible. It cannot have null key but can have multiple null values.
         Map<Integer, Integer> m = new TreeMap<>(); 
+
+        // 12)  HashMap.equals() method compares two hashmaps by key-value pairs. It means both hashmap instances must have exactly same key-value pairs and both must be of same size.    
+        HashMap.equals(copy);
+
     }
 }

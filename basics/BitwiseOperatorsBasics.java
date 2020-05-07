@@ -3,8 +3,8 @@
 public class BitwiseOperatorsBasics {
     public static void main(String[] args) {
         // Initial values
-        int a = 5;
-        int b = 7;
+        int a = 5; // 0101
+        int b = 7; // 0111
 
         // 1) bitwise and
         // 0101 & 0111 => 0101 = num 5
@@ -35,8 +35,8 @@ public class BitwiseOperatorsBasics {
         a &= b;
         System.out.println("a= " + a); // a= 5
 
-        a = 5;
-        b = -10;
+        a = 5; //0000 0101
+        b = -10; // 
         // HACK: Signed vs unsigned numbers: https://www.youtube.com/watch?v=miwMEUfkqfY
         // Signed number -> Has positive (denoted as 0 at the left most bit) or negative number (denoted as 1 at the left most bit)
         // Unsigned number -> only positive number
@@ -48,13 +48,14 @@ public class BitwiseOperatorsBasics {
 
         // 7) Signed right shift operator : num >> n => Divides num by 2^n times.
         // NOTE: >> preserves the sign bit.
-        // 0000 0101 >> 2 => 0000 0001( num 1)
-        // similar to 5/(2^2)
-        System.out.println("b>>2 = " + (b >> 2));
+        // 0000 0101 >> 2 => 0000 0001( num 1 )
+        // Similarly, -10 >> 1 = -5  =>  -10/(2^1) => -5
+        System.out.println("b>>2 = " + (b >> 1)); // -5
 
         // 8) Unsigned right shift operator
         // NOTE: DOES NOT preserve the sign bit. 
-        System.out.println("b>>>2 = " + (b >>> 2));
+        // -10 >>> 1 = 2147483643  => Shifts the bits of the number to the right and fills 0 on voids left as a result. 
+        System.out.println("b>>>2 = " + (b >>> 1)); // 2147483643
 
     }
 }

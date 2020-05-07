@@ -1,6 +1,10 @@
 import java.util.Set;
 
-public class HashSetBasics {
+public class SetBasics {
+ 
+    // HashSet - Doesn't maintain order. Allows null values however if you insert more than one nulls it would still return only one null value.
+    // TreeSet - Sorts the elements in the ascending order. doesnt not allow null value
+    // LinkedHashSet - Maintains the insertion order. Allows null values however if you insert more than one nulls it would still return only one null value.
     public static void main( String[] args ){
         Set<Integer> set = HashSet<>();
 
@@ -27,5 +31,6 @@ public class HashSetBasics {
 
         // 6) Returns the number of elements in this set.
         set.size() // returns 1.
+
     } 
 }

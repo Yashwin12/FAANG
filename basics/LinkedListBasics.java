@@ -2,6 +2,7 @@ import java.util.*;
 
 class LinkedListBasics{
 
+    // LinkedList -> Allows null entry
     public static void main(String[] args){
 
         // Linked List implementation via Queue interface is handled more than List interface. 
