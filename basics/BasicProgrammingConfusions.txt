@@ -19,13 +19,36 @@ Binary search is an efficient algorithm for finding an item from a sorted list o
 5) Skewed Tree 
 A skewed tree is a tree where each node has only one child node or none. A binary tree, which is dominated solely by ( chain of ) left child nodes or right child nodes, is called a skewed binary tree, more specifically left skewed binary tree, or right skewed binary tree.
 
+6) Generics in java
+It would be nice if we could write a single sort method that could sort the elements in an Integer array, a String array, or an array of any type that supports ordering.
+Java Generic methods and generic classes enable programmers to specify, with a single method declaration, a set of related methods, or with a single class declaration, a set of related types, respectively.
+
+7) Synchronization 
+When some thing is synchronized, then multiple threads can access, and modify it with out any problem or side effect. 
+
+8) Java sorting methods
+Java uses Dual-Pivot Quicksort for primitive data type -> T: O(n*logn) | S: O(1) OR to be precise O(logn).
+Java uses MergeSort for Collections or Object[] sort.
+
+
 QUESTION JARGON
-1) Increasing vs Non-decreasing: 
-Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it
+    1) Increasing vs Non-decreasing: 
+    Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it
 
-2) In-place: 
-In-place means we should not be allocating any space for extra array. But we are allowed to modify the existing array.
+    2) In-place: 
+    In-place means we should not be allocating any space for extra array. But we are allowed to modify the existing array.
 
-3) One pass OR Single-pass: 
-In computing, a one-pass algorithm is a streaming algorithm which reads its input exactly once, in order, without unbounded buffering. A one-pass algorithm generally requires O(n) time and less than O(n) storage (typically O(1)), where n is the size of the input.
+    3) One pass OR Single-pass: 
+    In computing, a one-pass algorithm is a streaming algorithm which reads its input exactly once, in order, without unbounded buffering. A one-pass algorithm generally requires O(n) time and less than O(n) storage (typically O(1)), where n is the size of the input.
 
+
+STUDY STRATEGY:
+
+    1) Pick a question.
+    2) Set a timer for 25 minutes.
+    3) Allocate the first 5 minutes to understand the problem and ask/answer clarifying questions to yourself.
+    4) Spend the next 20 minutes solving the problem on paper & pen/pencil (until timer rings).
+    5) Spend the next 10 minutes studying the solution.
+    6) Stop. Even if you’re in the middle of something important like trying to understand the solution. Do not spend more than 30–35 minutes per question.
+    7) Record activity on your progress chart.
+    8) Revisit the question next week.

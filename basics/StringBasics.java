@@ -49,5 +49,13 @@ public class StringBasics {
 
         // str1.replaceAll("\\s", ""); Removes all the spaces from the str1. 
         str1.replaceAll(regex, replacement)
+
+        str1.replaceFirst(regex, replacement);
+
+        // 11) Returns a string that is a substring of this string. The substring begins with the character at the specified index and extends to the end of this string.
+        str1.substring(beginIndex);
+
+        //Returns a string that is a substring of this string str1. The substring begins at the specified beginIndex and extends to the character at index endIndex - 1. Thus the length of the substring is endIndex-beginIndex.
+        str1.substring(beginIndex, endIndex);  
     }
 }

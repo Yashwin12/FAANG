@@ -9,10 +9,13 @@ class ArrayBasics{
         Integer[] arr = {1,2,3};
 
         // 1) Returns a fixed-size list backed by the specified array.
+        // Copies array arr values to a list 'a'. 
         List<Integer> a = Arrays.asList(arr);
         for(int i = 0; i < a.size(); i++){
             System.out.println(a.get(i));
         }
+        // Copies oldList values to a newList values. 
+        List<Integer> newList = new ArrayList<>(oldList);
 
        // 2) arr passed should be sorted and key inteded to found in array is passed.
        // Searches the specified array of ints for the specified value using the binary search algorithm. 
@@ -64,6 +67,22 @@ class ArrayBasics{
         // Removes the element at the specified position in this list (optional operation). 
         a.remove(0); // Removes value at 0th index
 
-        a.addAll(c);
+        // 12) Appends all of the elements in the specified collection to the end of this list, i
+        a.addAll(collection);
+
+        // 13) Initialize arrayList with 1,10,100
+        ArrayList<Integer> initializeList = new ArrayList<>() {
+            {
+                add(1);
+                add(10);
+                add(100);
+            }
+        }
+                // OR
+        ArrayList<Integer> initializeList = new ArrayList<>( Arrays.asList( 1,10, 100 ) ); 
+
+
+        
+
     }
 }
