@@ -32,5 +32,6 @@ public class SetBasics {
         // 6) Returns the number of elements in this set.
         set.size() // returns 1.
 
+        set.contains(o)
     } 
 }

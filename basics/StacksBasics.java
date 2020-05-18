@@ -22,5 +22,21 @@ class StacksBasics{
         if(!stackObj.isEmpty()){
             stackObj.pop();
         }
+
+        // 6) Removes the first occurrence of the specified element in this Vector If the Vector does not contain the element, it is unchanged.
+        stackObj.remove(o);
+
+        stackObj.remove(index)
+
+        // 7) Returns true if this vector contains the specified element
+        stackObj.contains(o);
+
+        // 8) Returns the element at the specified position in this Vector.
+        stackObj.get(index);
+
+        // 9) Replaces the element at the specified position in this Vector with the specified element.
+        stackObj.set(index, element);
+
+
     }
 }

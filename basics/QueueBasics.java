@@ -26,5 +26,11 @@ class QueueBasics{
         // 6) Removes head of the queueObj. SAFER THEN POP() 
         // HACK: https://stackoverflow.com/questions/35547237/whats-the-difference-between-poll-and-pop-for-linkedlist-in-java/35547277
         queueObj.poll();
+
+        Queue<Integer> infected = new ArrayDequeu<>();
+
+        infected.contains(o)
+
+        
     }
 }

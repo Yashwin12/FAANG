@@ -33,6 +33,10 @@ public class StringBuilderBasics {
         // 6) Returns the length of this character sequence
         str1.length()
 
+        str1.reverse();
+
+        
+        str1.substring(start, end);
         
     }
 }
