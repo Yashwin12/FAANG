@@ -2,7 +2,7 @@ import java.util.*;
 
 // HashMap doesn’t maintain any order. Allows 1 null key and (more than 1) null values.
 // TreeMap sort the entries in ascending order of keys. Doesnt allow null key, but multiple null values is fine. 
-// LinkedHashMap maintains the insertion order. Allows null key and (more than 1) null values.
+// LinkedHashMap maintains the insertion order. Allows maximum 1 null key and (more than 1) null values.
 
 // DUPLICATE KEYS ARE NOT ALLOWED IN ANY OF THE MAP.
 class MapBasics{

@@ -11,8 +11,8 @@ class Solution {
             this.y = y;
         }
 
-        // One needs to override hashCode and equals method in a CLASS for below reasons :  
-        // 1) Without overriding "equals", "contains" method uses reference equality. If the objects are distinct instances with the same fields then contains will return false. 
+        // One needs to override hashCode and equals method in a CLASS for below reasonse :  
+        // 1) Without overriding "equals", "contains" method uses "reference/ addresss" equality. If the objects are distinct instances with the same fields then contains will return false. 
         // 2) Java have a rule "If two objects are equal using Object class equals method, then the hashcode method should give the same value for these two objects"
         
         // Summary : One must override hashCode() in every class that overrides equals(). Failure to do so will result in a violation of the general contract for Object.hashCode(), which will prevent one's class from functioning properly in conjunction with all hash-based collections, including HashMap, HashSet, and Hashtable.

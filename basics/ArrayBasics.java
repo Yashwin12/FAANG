@@ -1,7 +1,7 @@
 import java.util.*;
 class ArrayBasics{
 
-    // ArrayList -> Allows null entry
+    // ArrayList -> Allows multiple null entry
     // int[] a = null; Invalid becuase primitive datatype cant have null values
     public static void main (String[] args){
 

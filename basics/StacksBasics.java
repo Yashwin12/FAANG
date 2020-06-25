@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Stack allows multiple null values
 // LIFO 
 class StacksBasics{
     public static void main(String[] args){

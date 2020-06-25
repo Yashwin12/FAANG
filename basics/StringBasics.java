@@ -28,7 +28,7 @@ public class StringBasics {
         str1.compareToIgnoreCase(str2);
 
         // 5) Returns true if and only if this string contains the specified sequence of char values
-        str1.contains(substring);
+        str1.contains(s)
 
         // 6) 
         str1.concat(str2);

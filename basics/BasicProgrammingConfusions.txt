@@ -41,9 +41,13 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
 
     HACK: Refer to 3 upvoted ans on https://stackoverflow.com/questions/2265503/why-do-i-need-to-override-the-equals-and-hashcode-methods-in-java
 
-11) Post-increment vs Pre-increment: 
-    HACK:  https://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array
+11) Difference between == and .equals() method in Java
+    We can use == operators for reference/ address comparison  and .equals() method for content/ value comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
 
+    HACK: https://www.geeksforgeeks.org/difference-equals-method-java/
+
+12) Post-increment vs Pre-increment: 
+    HACK:  https://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array
 
  
 
@@ -68,3 +72,9 @@ STUDY STRATEGY:
     6) Stop. Even if you’re in the middle of something important like trying to understand the solution. Do not spend more than 30–35 minutes per question.
     7) Record activity on your progress chart.
     8) Revisit the question next week.
+
+Work Flow: 
+UI -> REST PROXY -> APIGEE -> ORCHESTRATOR -> APIGEE -> REST service -> DB
+
+Big-Oh Notation
+1 < logn < sqrt(n) < n < n * logn < n^2 < n^3 < .... < 2^n < 3^n < .... < n^n
