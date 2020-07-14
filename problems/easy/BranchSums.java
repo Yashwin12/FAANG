@@ -1,5 +1,6 @@
 import java.util.*;
 
+//1) S: O(n) | T: O(n)
 class Program {
   // This is the class of the input root. Do not edit it.
   public static class BinaryTree {
@@ -41,4 +42,45 @@ class Program {
 		return sumsList;
 	}
 	
+}
+
+
+
+import java.util.*;
+// 2) A little different S: O(n) | T: O(n)
+class Program {
+  // This is the class of the input root. Do not edit it.
+  public static class BinaryTree {
+    int value;
+    BinaryTree left;
+    BinaryTree right;
+
+    BinaryTree(int value) {
+      this.value = value;
+      this.left = null;
+      this.right = null;
+    }
+  }
+
+  public static List<Integer> branchSums(BinaryTree root) {
+    
+		List<Integer> list = new ArrayList<>();
+		helperMethod(root, 0, list);
+		System.out.println(list);
+    return list;
+  }
+	
+	public static void helperMethod( BinaryTree root, int runningSum, List<Integer> list){
+		if( root == null )
+			return;		
+						
+		runningSum += root.value;
+		
+		helperMethod(root.left, runningSum, list );		
+		helperMethod(root.right, runningSum, list );
+		
+		if( root.left == null && root.right == null )
+			list.add( runningSum ); 
+		
+	}	
 }
