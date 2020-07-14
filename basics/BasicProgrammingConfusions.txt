@@ -1,0 +1,80 @@
+1) return null; vs return;
+// HACK: https://stackoverflow.com/questions/8749091/should-a-function-use-return-null
+If you don't return anything, just use return; or omit it at all at the end of the function.
+If your function is usually returns something ( non-premitive data type ) but doesn't for some reason, return null; is the way to go.
+
+//HACK: https://stackoverflow.com/questions/17221759/returning-null-in-a-method-whose-signature-says-return-int
+Also method returning primitive data type can't return null; 
+
+2) Primitive vs non-primitive Data Type: 
+https://www.edureka.co/blog/data-types-in-java/#Non-PrimitiveDataTypes
+
+3) BINARY TREE VS BINARY SEARCH TREE (BST):
+
+A binary tree is a non linear data structure where each node can have at most 2 child nodes. ... Binary search tree is a binary tree in which a node have a value greater than all values in its left subtree and smaller than all values in its right subtree.
+
+4) Binary Search:
+Binary search is an efficient algorithm for finding an item from a sorted list of items. Refer BinarySearchAlgo.java
+
+5) Skewed Tree 
+A skewed tree is a tree where each node has only one child node or none. A binary tree, which is dominated solely by ( chain of ) left child nodes or right child nodes, is called a skewed binary tree, more specifically left skewed binary tree, or right skewed binary tree.
+
+6) Generics in java
+It would be nice if we could write a single sort method that could sort the elements in an Integer array, a String array, or an array of any type that supports ordering.
+Java Generic methods and generic classes enable programmers to specify, with a single method declaration, a set of related methods, or with a single class declaration, a set of related types, respectively.
+
+7) Synchronization 
+When some thing is synchronized, then multiple threads can access, and modify it with out any problem or side effect. 
+
+8) Java sorting methods
+Java uses Dual-Pivot Quicksort for primitive data type -> T: O(n*logn) | S: O(1) OR to be precise O(logn).
+Java uses MergeSort for Collections or Object[] sort.
+
+9) Runtime of Arrays vs HashMaps:
+Arrays will usually be faster than Collections classes. Arrays are faster when the indexes are known (HashMap uses an array of linked lists behind the scenes which adds a bit of overhead above the hashing operations that need to be done)
+
+10) One needs to override hashCode and equals method in a CLASS for below reasons: (For reference refer to 994.java )
+    a) Without overriding "equals", "contains" method uses reference equality. If the objects are distinct instances with the same fields then contains will return false. 
+    b) Java have a rule "If two objects are equal using Object class equals method, then the hashcode method should give the same value for these two objects"
+        
+    Summary : One must override hashCode() in every class that overrides equals(). Failure to do so will result in a violation of the general contract for Object.hashCode(), which will prevent one's class from functioning properly in conjunction with all hash-based collections, including HashMap, HashSet, and Hashtable.
+
+    HACK: Refer to 3 upvoted ans on https://stackoverflow.com/questions/2265503/why-do-i-need-to-override-the-equals-and-hashcode-methods-in-java
+
+11) Difference between == and .equals() method in Java
+    We can use == operators for reference/ address comparison  and .equals() method for content/ value comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.
+
+    HACK: https://www.geeksforgeeks.org/difference-equals-method-java/
+
+12) Post-increment vs Pre-increment: 
+    HACK:  https://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array
+
+ 
+
+QUESTION JARGON
+    1) Increasing vs Non-decreasing: 
+    Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it
+
+    2) In-place: 
+    In-place means we should not be allocating any space for extra array. But we are allowed to modify the existing array.
+
+    3) One pass OR Single-pass: 
+    In computing, a one-pass algorithm is a streaming algorithm which reads its input exactly once, in order, without unbounded buffering. A one-pass algorithm generally requires O(n) time and less than O(n) storage (typically O(1)), where n is the size of the input.
+
+
+STUDY STRATEGY:
+
+    1) Pick a question.
+    2) Set a timer for 25 minutes.
+    3) Allocate the first 5 minutes to understand the problem and ask/answer clarifying questions to yourself.
+    4) Spend the next 20 minutes solving the problem on paper & pen/pencil (until timer rings).
+    5) Spend the next 10 minutes studying the solution.
+    6) Stop. Even if you’re in the middle of something important like trying to understand the solution. Do not spend more than 30–35 minutes per question.
+    7) Record activity on your progress chart.
+    8) Revisit the question next week.
+
+Work Flow: 
+UI -> REST PROXY -> APIGEE -> ORCHESTRATOR -> APIGEE -> REST service -> DB
+
+Big-Oh Notation
+1 < logn < sqrt(n) < n < n * logn < n^2 < n^3 < .... < 2^n < 3^n < .... < n^n
