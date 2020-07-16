@@ -1,7 +1,7 @@
 1) return null; vs return;
 // HACK: https://stackoverflow.com/questions/8749091/should-a-function-use-return-null
 If you don't return anything, just use return; or omit it at all at the end of the function.
-If your function is usually returns something ( non-premitive data type ) but doesn't for some reason, return null; is the way to go.
+If your function usually returns something ( non-premitive data type ) but doesn't for some reason, return null; is the way to go.
 
 //HACK: https://stackoverflow.com/questions/17221759/returning-null-in-a-method-whose-signature-says-return-int
 Also method returning primitive data type can't return null; 

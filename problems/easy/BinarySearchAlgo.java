@@ -12,7 +12,7 @@ class Program {
         if (left > right) {
             return -1;
         }
-        int middle = (left + right) / 2;
+        int middle = (left + right) / 2; // Preferred: int middle = left + (right - left)/2;
         int middleValue = array[middle];
         if (middleValue == target) {
             return middle;
@@ -30,7 +30,7 @@ class Program {
     // public static int binarySearchHelper(int[] array, int target, int left, int right) {
 
     //     while (left <= right) {
-    //         int middle = (left + right) / 2;
+    //      int middle = (left + right) / 2; // Preferred: int middle = left + (right - left)/2;    
     //         int middleValue = array[middle];
     //         if (middleValue == target) {
     //             return middle;
