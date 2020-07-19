@@ -68,3 +68,37 @@ class Program {
         return returnArray;
     }
 }
+
+// Similar to #2 algorithm, but it has less number of variables used and much simpler....
+import java.util.*;
+
+class Program {
+    public static int[] smallestDifference(int[] arrayOne, int[] arrayTwo) {
+        Arrays.sort(arrayOne);
+        Arrays.sort(arrayTwo);
+
+        int one = 0;
+        int two = 0;
+        int smallest = Integer.MAX_VALUE;
+        int[] returnArr = new int[2];
+
+        while (one < arrayOne.length && two < arrayTwo.length) {
+            int currentDiff = Math.abs(arrayOne[one] - arrayTwo[two]);
+
+            if (smallest > currentDiff) {
+                smallest = currentDiff;
+                returnArr[0] = arrayOne[one];
+                returnArr[1] = arrayTwo[two];
+            }
+
+            if (currentDiff == 0)
+                return new int[] { arrayOne[one], arrayTwo[two] };
+            else if (arrayOne[one] > arrayTwo[two])
+                two++;
+            else
+                one++;
+        }
+
+        return returnArr;
+    }
+}
