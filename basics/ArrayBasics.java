@@ -82,7 +82,11 @@ class ArrayBasics{
         ArrayList<Integer> initializeList = new ArrayList<>( Arrays.asList( 1,10, 100 ) ); 
 
 
-        
+        // If one wants to compare list of an arrays [ [],[],[] ]
+        // HACK: https://stackoverflow.com/questions/19596950/sort-an-arraylist-of-integer-arrays
+        Collections.sort( list, (Integer[] a, Integer[] b) ->{
+            return (Integer)(a[a.length-1]).compareTo(b[b.length-1]);
+        });
 
     }
 }

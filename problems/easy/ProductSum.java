@@ -30,7 +30,7 @@ class Program {
     return helperMethod( array, 1, 0);
   }
 	  
-  	// This would be correct for two depth special array. But [ 4, [ 1,2 ], 5 ] is wrong, as the inner array just multiplies 3 and NOT 6. 
+  	// This would be correct for two depth special array. But for [8,9,[ 4, [ 1,2 ], 5 ], 5] is wrong, as the inner array [1,2] just multiplies 3 and NOT 6. 
 	public static int helperMethod(List<Object> array, int depth, int sum){
 		
 		for ( int i = 0; i < array.size(); i++ ){

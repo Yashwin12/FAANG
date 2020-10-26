@@ -6,7 +6,6 @@ public class StringBuilderBasics {
     // StringBuilder  - mutable but not synchronized by default. ( Faster )
     public static void main(String[] args) {
 
-        StringBu
         StringBuilder str = new StringBuilder();
 
         // 1) Appends the specified string to this character sequence. If str is null, then the four characters "null" are appended.        
