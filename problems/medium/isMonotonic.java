@@ -49,3 +49,45 @@ class Program {
         return isNonIncreasing || isNonDecreasing;
     }
 }
+
+import java.util.*;
+
+class Program {
+  public static boolean isMonotonic(int[] array) {
+    
+		if( array.length <= 2 ){
+			return true;
+		}
+		
+		int i = 0;
+		boolean nonDecreasing = false;
+		// The below loop is to determine directions; this would also work for having array with same elements at the start i.e [1,1,1,1,2,3]. 
+		for( i = 0; i < array.length - 1; i ++){
+			if( array[i] != array[i+1]){
+				nonDecreasing = array[i] > array[i+1] ? true: false;					
+				break;
+			}			
+		}
+
+		while ( i < array.length - 1){
+			
+			// Simply ignoring same elemets
+			if( array[i] == array[i+1] ){
+				i++;
+				continue;
+			}
+			
+			if( nonDecreasing && array[i] > array[i+1] ){
+				i++;
+			}
+			else if( !nonDecreasing && array[i] < array[i+1] ){
+				i++;
+			}
+			else{
+				return false;
+			}
+		}
+		
+    return true;
+  }
+}
