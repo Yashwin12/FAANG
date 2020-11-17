@@ -49,6 +49,7 @@ class Program {
         }
 
         // IMORTANT: Many edge cases + difficult to implement. 
+        // HACK: https://www.techiedelight.com/deletion-from-bst/
         public BST remove(int value) {
             removeHelper(value, null);
             return this;
