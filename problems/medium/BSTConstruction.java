@@ -84,7 +84,9 @@ class Program {
                             currentNode.left = currentNode.right.left;
                             currentNode.right = currentNode.right.right;
                         } else {
-                            // This is a single-node tree; do nothing
+                            // This is a single-node tree; do nothing as asked by the question description.
+                            // We can also delete the WHOLE tree if nothing is mentioned by:
+                            // currentNode = null
                         }
                     }
 
