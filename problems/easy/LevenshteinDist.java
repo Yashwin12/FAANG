@@ -1,6 +1,8 @@
 class Program {
 	
 // 	// T: O(str1 * str2) | S: O(str1 * str2)
+// HACK: https://www.youtube.com/watch?v=b6AGUjqIPsA
+// This is used in "auto-suggestions" and "spell-checking" while typing a word! 
   public static int levenshteinDistance(String str1, String str2) {
     
 		int[][] matrix = new int[str1.length() + 1][str2.length() + 1];

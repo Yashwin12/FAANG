@@ -1,5 +1,7 @@
 // HACK: https://www.youtube.com/watch?v=DJ4a7cmjZY0&t=192s
 
+// HACK 2: https://www.youtube.com/watch?v=PafJOaMzstY
+
 // For folks who still don't understand the intuition behind "table[row][col - coins[row-1]" and "table[row-1][col]"
 
 // Amount 5, with coins [1,2].
@@ -20,29 +22,35 @@
 // -> Without 2 ( table[row-1][col] ):
 // [1+1+1+1+1]
 
-// 1) T: O (denoms * n); S: O(denoms * n)
+// import java.util.*;
+// // 1) T: O (denoms * n); S: O(denoms * n)
 // class Program {
-//     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
-
-//         int[][] mat = new int[denoms.length + 1][n + 1];
-
-//         for (int i = 0; i <= denoms.length; i++) {
-//             mat[i][0] = 1;
-//         }
-
-//         for (int row = 1; row <= denoms.length; row++) {
-//             for (int col = 1; col <= n; col++) {
-
-//                 if (col >= denoms[row - 1]) {
-//                     mat[row][col] = mat[row - 1][col] + mat[row][col - denoms[row - 1]];
-//                 } else {
-//                     mat[row][col] = mat[row - 1][col];
-//                 }
-//             }
-//         }
-//         return mat[denoms.length][n];
-//     }
+//   public static int numberOfWaysToMakeChange(int n, int[] denoms) {
+//      Matrix of (Denominations, n) (Row, Col)
+//   	int[][] matrix = new int[denoms.length + 1][n + 1];
+		
+// 		// Below loops Initializes first col. We do not need to initialize first row to zero, as by default in java all values are initialized to 0. 
+// 		for( int i = 0; i < matrix.length; i++){
+// 			matrix[i][0] = 1;
+//  		}
+				
+// 		for( int row = 1; row < matrix.length; row++ ){
+// 			for( int col = 1; col < matrix[0].length; col++ ){
+				
+// 				if( col >= denoms[row - 1]){
+// 					matrix[row][col] = matrix[row - 1][col] + matrix[row][col - denoms[row - 1]];	
+// 				}
+// 				else{
+// 					matrix[row][col] = matrix[row - 1][col];
+// 				}
+				
+// 			}
+// 		}
+		
+//     return matrix[matrix.length - 1][matrix[0].length - 1];
+//   }
 // }
+
 
 // The below method is similar to algoexperts'
 // 2) T: O(denoms * n) | S: O(n); where n = target value.
