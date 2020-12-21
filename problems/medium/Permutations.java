@@ -1,3 +1,4 @@
+// VERY IMPORTANT!
 // import java.util.*;
 
 // class Program {
@@ -28,6 +29,7 @@
 
 import java.util.*;
 
+// 2) T: O( n * n!) : S: O(n * n!)
 class Program {
   public static List<List<Integer>> getPermutations(List<Integer> array) {
 		List<List<Integer>> permutations = new ArrayList<List<Integer>>();

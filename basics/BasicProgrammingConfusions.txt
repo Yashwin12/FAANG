@@ -49,7 +49,8 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
 12) Post-increment vs Pre-increment: 
     HACK:  https://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array
 
- 
+13) Auxiliary Space: 
+    Auxiliary Space is the extra space or temporary space used by an algorithm. Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size.
 
 QUESTION JARGON
     1) Increasing vs Non-decreasing: 
