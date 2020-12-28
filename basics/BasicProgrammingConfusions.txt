@@ -52,6 +52,33 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
 13) Auxiliary Space: 
     Auxiliary Space is the extra space or temporary space used by an algorithm. Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size.
 
+14) To generate a random number in a given range:
+    // HACK: https://www.baeldung.com/java-generating-random-numbers-in-range
+
+    // Math.random() gives value in [0,1] range. Give range for a random number to be in. For example [min, max] = [0,7].
+    
+    int j = (int) ((Math.random() * (max - min)) + min); 
+
+    OR 
+    Random random = new Random();
+    return random.nextInt(max - min) + min;
+
+// HACK: https://www.youtube.com/watch?v=_i_nTcwyh-E
+15) Top-down vs bottom-up approach:
+    Top-down => Recursion + memoization: 
+        fib(4): fib(4) => fib(3) => fib(2) => fib(1) => fib(0) (Base Case)
+
+    Bottom-up => Usually uses table or array to store value. Starts with the base case and then solves the ending problem. 
+        fib(4): fib(0) (Base Case) => fib(1) => fib(2) => fib(3) => fib(4)
+
+// HACK: https://www.youtube.com/watch?v=3vU6kAa2mnI
+16) Floyd's Tortoise and Hare Algorithm:
+    This is mainly used to find loop/ cycle in the Linked List.    
+
+// HACK: https://www.youtube.com/watch?v=n5QY3x_GNDg
+17) Boyer-Moore Voting Algorithm:
+    This is used to find majority element in a list. (Refer 169.java)
+
 QUESTION JARGON
     1) Increasing vs Non-decreasing: 
     Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it

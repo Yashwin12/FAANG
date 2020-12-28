@@ -16,6 +16,10 @@ class MapBasics{
         // If the specified key is not already associated with a value (or is mapped to null) associates it with the given value and returns null, else returns the current value.
         hashMapObj.putIfAbsent("key4", "four"); 
 
+        // Returns the number of key-value mappings in this map.
+        hashMapObj.size();
+        
+
         Map<String, String> copy = new HashMap<>();
         
         // 2) Returns true if this map contains no key-value mappings.
@@ -69,6 +73,8 @@ class MapBasics{
 
         // 12)  HashMap.equals() method compares two hashmaps by key-value pairs. It means both hashmap instances must have exactly same key-value pairs and both must be of same size.    
         HashMap.equals(copy);
+
+        
 
     }
 }

@@ -28,27 +28,27 @@ public class StringBasics {
         str1.compareToIgnoreCase(str2);
 
         // 5) Returns true if and only if this string contains the specified sequence of char values
-        str1.contains(s)
+        str1.contains(s);
 
         // 6) 
         str1.concat(str2);
 
         // 7) Returns the index within this string of the FIRST occurrence of the specified substring.
-        str1.indexOf(str)
+        str1.indexOf(str);
 
         // Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index.
-        str1.indexOf(str, fromIndex)
+        str1.indexOf(str, fromIndex);
 
         // 9) Tells whether or not this string matches the given regular expression.
-        str1.matches(regex)
+        str1.matches(regex);
 
         // 10) Replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence. The replacement proceeds from the beginning of the string to the end, for example, replacing "aa" with "b" in the string "aaa" will result in "ba" rather than "ab".
-        str1.replace(target, replacement)
+        str1.replace(target, replacement);
 
-        str1.replace(oldChar, newChar)
+        str1.replace(oldChar, newChar);
 
         // str1.replaceAll("\\s", ""); Removes all the spaces from the str1. 
-        str1.replaceAll(regex, replacement)
+        str1.replaceAll(regex, replacement);
 
         str1.replaceFirst(regex, replacement);
 

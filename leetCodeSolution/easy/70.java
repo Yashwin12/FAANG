@@ -1,4 +1,5 @@
 // 1) T: O(N) | S: O(N)
+// Bottom Up Approach
 // class Solution {
 //     public int climbStairs(int n) {
 //         int[] ways = new int[ n + 1];
@@ -35,6 +36,7 @@
 
 
 // 3) T: O (N) | S: O(N)
+// Top Down approach.
 class Solution {
     Map<Integer, Integer> map = new HashMap<>();
     public int climbStairs(int n) {

@@ -27,9 +27,8 @@ class QueueBasics{
         // HACK: https://stackoverflow.com/questions/35547237/whats-the-difference-between-poll-and-pop-for-linkedlist-in-java/35547277
         queueObj.poll();
 
-        Queue<Integer> infected = new ArrayDequeu<>();
-
-        infected.contains(o)
+        Queue<Integer> infected = new ArrayDeque<>();
+        infected.contains(o);
 
         
     }

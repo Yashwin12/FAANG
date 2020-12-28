@@ -24,7 +24,13 @@ class PriorrityQueueBasics {
         queue.add(e);
         queue.offer(e);
 
-        queue.
+        queue.poll();
+        queue.peek();
+
+        queue.size();
+
+        // Removes a single instance of the specified element from this queue, if it is present.
+        queue.remove(ele);
         
     }
 }
