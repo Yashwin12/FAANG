@@ -74,6 +74,10 @@ class MapBasics{
         // 12)  HashMap.equals() method compares two hashmaps by key-value pairs. It means both hashmap instances must have exactly same key-value pairs and both must be of same size.    
         HashMap.equals(copy);
 
+
+        // 13) This would give size of the current map.
+        hashMapObj.keySet().size();
+
         
 
     }

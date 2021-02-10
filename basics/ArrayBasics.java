@@ -59,7 +59,7 @@ class ArrayBasics{
         a.set(0, 100); // replaces 0th element with 100;
 
         // 9) Sometimes while printing array one gets weird memory address by : System.out.println( arr );
-        System.out.println( Arrays.A( arr ) ); // This would print the whole god damn array :)
+        System.out.println( Arrays.toString( arr ) ); // This would print the whole god damn array :)
 
         // 10) Returns true if this list contains the specified element.
         a.contains(10);

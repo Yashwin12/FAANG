@@ -10,7 +10,7 @@ public class StringBuilderBasics {
 
         // 1) Appends the specified string to this character sequence. If str is null, then the four characters "null" are appended.        
         str.append("GFG"); // Need to convert toString in order to use it as a string.
-  
+        
         // print string 
         System.out.println( "String = " + str.toString() ); 
 
@@ -30,10 +30,9 @@ public class StringBuilderBasics {
         str1.deleteCharAt(index);
 
         // 6) Returns the length of this character sequence
-        str1.length()
+        str1.length();
 
         str1.reverse();
-
         
         str1.substring(start, end);
         
