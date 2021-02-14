@@ -19,7 +19,11 @@ class PriorrityQueueBasics {
             public int compare(Integer a, Integer b) {
                 return b - a;
             }
-        });        
+        }); 
+        // OR        
+        PriorityQueue<Integer> pq1 = new PriorityQueue<>( (Integer a, Integer b) -> {
+            return b - a;
+        });
         
         queue.add(e);
         queue.offer(e);
