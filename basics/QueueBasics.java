@@ -30,6 +30,7 @@ class QueueBasics{
         Queue<Integer> infected = new ArrayDeque<>();
         infected.contains(o);
 
+        queueObj.clear();
         
     }
 }
