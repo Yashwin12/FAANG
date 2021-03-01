@@ -1,8 +1,15 @@
 import java.util.*;
 
-// Do not edit the class below except for the buildHeap,
-// siftDown, siftUp, peek, remove, and insert methods.
-// Feel free to add new properties and methods to the class.
+// A min-heap is a binary tree such that
+// 1) The value contained in each node is less than (or equal to) the value in that node’s children.
+// 2) the binary tree is complete 
+
+// currentNode -> i
+// ChildOne -> 2*i + 1
+// ChildTwo -> 2*i + 2
+// ParentNode -> floor( (i - 1) /2) 
+
+// IMPORTANT: Conecpt is diff and important!
 class Program {
     static class MinHeap {
         List<Integer> heap = new ArrayList<Integer>();

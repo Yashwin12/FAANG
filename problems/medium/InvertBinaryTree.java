@@ -64,3 +64,41 @@ class Program {
     }
   }
 }
+
+
+import java.util.*;
+// 3)  S: O(n) | T: O(n)
+
+class Program {
+  public static void invertBinaryTree(BinaryTree tree) {
+		Stack<BinaryTree> stack = new Stack<>();
+		stack.push(tree);
+		while( !stack.isEmpty() ){
+			BinaryTree currentNode = stack.pop();
+			swapChildren(currentNode);
+			if( currentNode.left != null ){
+				stack.add(currentNode.left);
+			}
+			if( currentNode.right != null ){
+				stack.add(currentNode.right);
+			}
+		}
+	}
+	
+	public static void swapChildren ( BinaryTree tree){
+		BinaryTree temp = tree.left;
+		tree.left = tree.right;
+		tree.right = temp;
+	}
+
+
+  static class BinaryTree {
+    public int value;
+    public BinaryTree left;
+    public BinaryTree right;
+
+    public BinaryTree(int value) {
+      this.value = value;
+    }
+  }
+}

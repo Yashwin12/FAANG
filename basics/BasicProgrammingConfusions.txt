@@ -1,7 +1,7 @@
 1) return null; vs return;
 // HACK: https://stackoverflow.com/questions/8749091/should-a-function-use-return-null
 If you don't return anything, just use return; or omit it at all at the end of the function.
-If your function is usually returns something ( non-premitive data type ) but doesn't for some reason, return null; is the way to go.
+If your function usually returns something ( non-premitive data type ) but doesn't for some reason, return null; is the way to go.
 
 //HACK: https://stackoverflow.com/questions/17221759/returning-null-in-a-method-whose-signature-says-return-int
 Also method returning primitive data type can't return null; 
@@ -49,7 +49,108 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
 12) Post-increment vs Pre-increment: 
     HACK:  https://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array
 
- 
+13) Auxiliary Space: 
+    Auxiliary Space is the extra space or temporary space used by an algorithm. Space Complexity of an algorithm is total space taken by the algorithm with respect to the input size.
+
+14) To generate a random number in a given range:
+    // HACK: https://www.baeldung.com/java-generating-random-numbers-in-range
+
+    // Math.random() gives value in [0,1] range. Give range for a random number to be in. For example [min, max] = [0,7].
+    
+    int j = (int) ((Math.random() * (max - min)) + min); 
+
+    OR 
+    Random random = new Random();
+    return random.nextInt(max - min) + min;
+
+// HACK: https://www.youtube.com/watch?v=_i_nTcwyh-E
+15) Top-down vs bottom-up approach:
+    Top-down => Recursion + memoization: 
+        fib(4): fib(4) => fib(3) => fib(2) => fib(1) => fib(0) (Base Case)
+
+    Bottom-up => Usually uses table or array to store value. Starts with the base case and then solves the ending problem. 
+        fib(4): fib(0) (Base Case) => fib(1) => fib(2) => fib(3) => fib(4)
+
+// HACK: https://www.youtube.com/watch?v=3vU6kAa2mnI
+16) Floyd's Tortoise and Hare Algorithm:
+    This is mainly used to find loop/ cycle in the Linked List.    
+
+// HACK: https://www.youtube.com/watch?v=n5QY3x_GNDg
+17) Boyer-Moore Voting Algorithm:
+    This is used to find majority element in a list. (Refer 169.java)
+
+18) BFS, DFS implementation:
+    BFS => Queue
+    DFS => Recursion OR Stack
+
+// HACK: https://www.youtube.com/watch?v=D6dCOa_gMoY
+19) Knuth-Morris-Pratt (KMP) string matching algorithm: 
+    In real world KMP algorithm is used in those applications where pattern matching is done in long strings, whose symbols are taken from an alphabet with little cardinality. A relevant example is the DNA alphabet, which consists on only 4 symbols (A,C,G,T). Imagine how KMP can work in a "DNA pattern matching problem": it is really suitable because many repetition of the same letter allows many jumps, and so less computation time wasted.
+
+// HACK: https://stackoverflow.com/questions/8790809/whats-the-difference-between-primitive-and-reference-types
+20) Primitive vs Reference Types: 
+    Primitive types are the basic types of data: byte, short, int, long, float, double, boolean, char. Primitive variables store primitive values. Reference types are any instantiable class as well as arrays: String, Scanner, Random, Die, int[], String[], etc. Reference variables store addresses to locations in memory for where the data is stored.
+
+// HACK: https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/#Graph.removeVertex
+// HACK: https://www.geeksforgeeks.org/implementing-generic-graph-in-java/
+21) Graph basics: 
+    Three common Graph properties: 
+        a) Connected/ disConnected Graphs
+        b) Directed/ Undirected Graphs
+        c) Cyclic/ Acyclic Graphs
+
+    Primary ways to represent graph: 
+        a) Adjancency List
+        b) Adjancency Matrix
+    
+    Graph Traversals: 
+        a) BFS: Usually used to find shortest shortest distance between nodes(vertexes) & edges.
+        b) DFS
+
+    TREE Traversals: 
+        a) In-Order: ( left -> current -> right)
+        b) Pre-Order: ( current -> left -> right)
+        c) Post-Order: ( left -> right -> current)
+
+    NOTE: Tree is a directed( parent to child), Connected and Acyclic type of graph.    
+
+// HACK: https://www.youtube.com/watch?v=cIBFEhD77b4
+22) Kahn's Algorithm for Topological Sorting (Refer 210.java & CyclesInGraph.java ): 
+    Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+
+23) Pass-by-value vs Pass-by-reference
+    Refer (RiverSizes.java)
+
+// HACK: https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy
+// HACK:https://www.cs.utexas.edu/~scottm/cs307/handouts/deepCopying.htm
+// HACK: https://dzone.com/articles/java-copy-shallow-vs-deep-in-which-you-will-swim
+24) Shallow-copy vs deep-copy
+    A shallow copy of an object copies the ‘main’ object, but doesn’t copy the inner objects. The ‘inner objects’ are shared between the original object and its copy.
+
+    Unlike the shallow copy, a deep copy is a fully independent copy of an object. If we copied our Person object, we would copy the entire object structure.
+
+// HACK: https://www.geeksforgeeks.org/autoboxing-unboxing-java/
+25) Autoboxing and Unboxing: 
+    Refer( 290.java)
+
+// HACK: https://www.techiedelight.com/find-inorder-predecessor-given-key-bst/
+// HACK: https://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
+26) Inorder successor vs Inorder predecessor: 
+
+27) Different values that can be represented with 'k' bits. 
+    Unsigned: 0 to 2^(k)-1
+    Signed: -2^(k-1) to 2^(k-1) -1
+
+    Power(in bits)    Exact Value         Approx Value        Bytes
+    ---------------------------------------------------------------
+    7                             128
+    8                             256
+    10                           1024   1 thousand           1 KB
+    16                         65,536                       64 KB
+    20                      1,048,576   1 million            1 MB
+    30                  1,073,741,824   1 billion            1 GB
+    32                  4,294,967,296                        4 GB
+    40              1,099,511,627,776   1 trillion           1 TB
 
 QUESTION JARGON
     1) Increasing vs Non-decreasing: 

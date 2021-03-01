@@ -1,0 +1,7 @@
+0. For Viewing Image In Good Quality. Right CLick On Image Open In a New Tab. Then Zoom ..
+1. In the main section 2, each question's first version is Java implementation and second is Python.
+
+
+Rule to identify Objects :
+i. Nouns in requirements are possible candidates for Objects
+ii. Verbs in the requirements are possible methods

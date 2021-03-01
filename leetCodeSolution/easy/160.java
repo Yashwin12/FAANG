@@ -91,7 +91,7 @@
 // }
 
 
-// 5) T: O(m*n) | T: O(1)
+// 5) T: O(m+n) | T: O(1)
 // HACK : https://www.youtube.com/watch?v=_7byKXAhxyM
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

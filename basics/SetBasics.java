@@ -6,7 +6,7 @@ public class SetBasics {
     // TreeSet - Sorts the elements in the ascending order. doesnt not allow null value
     // LinkedHashSet - Maintains the insertion order. Allows null values however if you insert more than one nulls it would still return only one null value.
     public static void main( String[] args ){
-        Set<Integer> set = HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
         //  1) Add elements to set
         set.add(21);
@@ -30,8 +30,8 @@ public class SetBasics {
         set.isEmpty(); // returns false
 
         // 6) Returns the number of elements in this set.
-        set.size() // returns 1.
+        set.size(); // returns 1.
 
-        set.contains(o)
+        set.contains(o);
     } 
 }

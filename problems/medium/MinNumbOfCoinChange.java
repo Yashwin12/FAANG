@@ -3,6 +3,8 @@
 //   public static int minNumberOfCoinsForChange(int n, int[] denoms) {
 		
 // 		int[] minCoins = new int[n +1];
+
+// 		Initializing to 0, as minimum number of coins required to make zero amount is 0.
 // 		minCoins[0] = 0;
 // 		int max = n +1;
 // 		for (int i =1; i< minCoins.length; i++ ){
@@ -58,7 +60,8 @@ class Program {
   public static int minNumberOfCoinsForChange(int n, int[] denoms) {
 		
 		int[][] minWays = new int[denoms.length + 1][ n + 1];
-
+			
+			// We're initializing it to high number so that our formula works! 
 			// This would Initialize every value as max. Inner statement could  be replaced by "minWays[0][col] = n + 1;"
 			for( int col = 1; col <= n; col++ )
 				minWays[0][col] = Integer.MAX_VALUE - 1;  
@@ -80,4 +83,4 @@ class Program {
 		
     return minWays[denoms.length][n] != Integer.MAX_VALUE - 1 ? minWays[denoms.length][n] :-1;
   }
-}
+}d

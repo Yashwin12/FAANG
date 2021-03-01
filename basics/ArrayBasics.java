@@ -8,6 +8,9 @@ class ArrayBasics{
         //int[] arr = new int[3];
         Integer[] arr = {1,2,3};
 
+        // This will initialize all the indexes of an array with 500.
+        Arrays.fill(arr, 500);
+
         // 1) Returns a fixed-size list backed by the specified array.
         // Copies array arr values to a list 'a'. 
         List<Integer> a = Arrays.asList(arr);
@@ -16,6 +19,9 @@ class ArrayBasics{
         }
         // Copies oldList values to a newList values. 
         List<Integer> newList = new ArrayList<>(oldList);
+
+        // This would initialize anotherList as [0,1];
+        List<Integer> anotherList = new ArrayList<>(Arrays.asList(0,1));
 
        // 2) arr passed should be sorted and key inteded to found in array is passed.
        // Searches the specified array of ints for the specified value using the binary search algorithm. 
@@ -79,10 +85,21 @@ class ArrayBasics{
             }
         }
                 // OR
-        ArrayList<Integer> initializeList = new ArrayList<>( Arrays.asList( 1,10, 100 ) ); 
+        // ArrayList<Integer> initializeList = new ArrayList<>( Arrays.asList( 1,10, 100 ) ); 
 
 
-        
+        // If one wants to compare list of an arrays [ [],[],[] ]
+        // List<int[]> list = new ArrayList<>();
+        // HACK: https://stackoverflow.com/questions/19596950/sort-an-arraylist-of-integer-arrays
+        Collections.sort( list, (Integer[] a, Integer[] b) ->{
+            // below will compare last element present in the arrays
+            return (Integer)(a[a.length-1]).compareTo(b[b.length-1]);
+        });
+
+        // This is to convert List<int[]> to 2D matrix! 
+        // HACK: https://stackoverflow.com/questions/47135950/how-can-i-convert-a-listint-to-a-2d-array/47136005#47136005
+        List<int[]> lists = new ArrayList<>();
+        int[][] converted = lists.toArray( new int[lists.size()][] );
 
     }
 }

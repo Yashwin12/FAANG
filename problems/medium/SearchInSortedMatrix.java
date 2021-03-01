@@ -16,7 +16,9 @@
 //   }
 // }
 
-// 2) 
+// 2) The search starts from "top-right" corner!
+// If we stand on the top-right corner of the matrix and look diagonally, it's kind of like a BST, we can go through this matrix to find the target like how we traverse the BST.
+
 class Program {
 	// T: O(rowLen + colLen) | S: O(1) 
   public static int[] searchInSortedMatrix(int[][] matrix, int target) {
@@ -43,3 +45,28 @@ class Program {
 		return new int[]{-1, -1};
   }
 }
+
+
+// 3) The search starts from "bottom-left" corner!
+// T: O(rowLen + colLen) | S: O(1) 
+// import java.util.*;
+
+// class Program {
+//   public static int[] searchInSortedMatrix(int[][] matrix, int target) {
+    
+// 		int row = matrix.length - 1;;
+// 		int col = 0;
+		
+// 		while( row >= 0 && col >= 0 && row < matrix.length && col < matrix[0].length ){
+// 			if( matrix[row][col] > target )
+// 				row--;
+// 			else if( matrix[row][col] < target )
+// 				col++;
+// 			else
+// 				return new int[] {row, col};		
+// 		}
+		
+//     return new int[] {-1, -1};
+//   }
+// }
+
