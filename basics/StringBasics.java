@@ -21,8 +21,8 @@ public class StringBasics {
         str1.charAt(index);
 
         // 4)  Returns: A) value 0 if the argument string is equal to this string; exactly when the equals(Object) method would return true
-        // B) a value less than 0 if this string is lexicographically less than the string argument; 
-        // C) a value greater than 0 if this string is lexicographically greater than the string argument.
+        // B) a value less than 0 if str1 is lexicographically less than the str2; 
+        // C) a value greater than 0 if this str1 is lexicographically greater than the str2.
         str1.compareTo(str2);
 
         str1.compareToIgnoreCase(str2);
@@ -41,6 +41,11 @@ public class StringBasics {
 
         // 9) Tells whether or not this string matches the given regular expression.
         str1.matches(regex);
+        
+        // Eg 
+        str1.matches("[^a-zA-Z0-9]+");
+        Pattern.compile("[^a-zA-Z0-9]+").matcher(str).matches(); // when str is ab! then it returns false
+//         where, [^a-zA-Z0-9] represents only special characters. '+' represents one or more times.
 
         // 10) Replaces each substring of this string that matches the literal target sequence with the specified literal replacement sequence. The replacement proceeds from the beginning of the string to the end, for example, replacing "aa" with "b" in the string "aaa" will result in "ba" rather than "ab".
         str1.replace(target, replacement);
@@ -57,5 +62,6 @@ public class StringBasics {
 
         //Returns a string that is a substring of this string str1. The substring begins at the specified beginIndex and extends to the character at index endIndex - 1. Thus the length of the substring is endIndex-beginIndex.
         str1.substring(beginIndex, endIndex);  
+        
     }
 }

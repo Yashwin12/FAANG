@@ -29,5 +29,7 @@ public class CharacterBasics {
         Character.isDigit(ch);
 
         Character.isWhitespace(ch);
+
+        Character.isUpperCase(ch);
     }
 }

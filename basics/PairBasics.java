@@ -1,5 +1,6 @@
 import java.util.*;
 
+// NOTE: This is a pre-baked class available in java. We can just use it as any other class (Refer 73.java)
 public class PairBasics {
     
     // A geenric class for "key-value" for an object. 

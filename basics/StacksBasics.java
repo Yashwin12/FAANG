@@ -27,7 +27,7 @@ class StacksBasics{
         // 6) Removes the first occurrence of the specified element in this Vector If the Vector does not contain the element, it is unchanged.
         stackObj.remove(o);
 
-        stackObj.remove(index)
+        stackObj.remove(index);
 
         // 7) Returns true if this vector contains the specified element
         stackObj.contains(o);

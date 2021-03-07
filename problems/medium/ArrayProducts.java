@@ -1,22 +1,22 @@
 import java.util.*;
 
 // 1) Brute Force: T: O(n^2) | S: O(n)
-class Program {
-  public int[] arrayOfProducts(int[] array) {
-		int[] products = new int[array.length];
-		for( int i = 0; i < array.length; i++ ){
-			int product = 1;
-			for( int j = 0; j < array.length; j++ ){
-				if( i == j){
-					continue;
-				}
-					product = product * array[j];
-			}
-			products[i] = product;
-		}
-    return products;
-  }
-}
+// class Program {
+//   public int[] arrayOfProducts(int[] array) {
+// 		int[] products = new int[array.length];
+// 		for( int i = 0; i < array.length; i++ ){
+// 			int product = 1;
+// 			for( int j = 0; j < array.length; j++ ){
+// 				if( i == j){
+// 					continue;
+// 				}
+// 					product = product * array[j];
+// 			}
+// 			products[i] = product;
+// 		}
+//     return products;
+//   }
+// }
 
 
 import java.util.*;

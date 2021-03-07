@@ -17,8 +17,8 @@ class ArrayBasics{
         for(int i = 0; i < a.size(); i++){
             System.out.println(a.get(i));
         }
-        // Copies oldList values to a newList values. 
-        List<Integer> newList = new ArrayList<>(oldList);
+        // Copies oldList values to a newList values. NOTE: This makes a "shallow" copy
+        List<Integer> newList = new ArrayList<>(oldList); 
 
         // This would initialize anotherList as [0,1];
         List<Integer> anotherList = new ArrayList<>(Arrays.asList(0,1));
@@ -42,12 +42,16 @@ class ArrayBasics{
             // OR
         
         Foo fooObj = new Foo();  
-        // Refer 937.java file for implementation   
+
+
+        // Refer 937.java file for implementation
         Collections.sort(new ArrayList<Foo>(), new Comparator (){
             public int compare(Object o1, Object o2) {
                 // some complex logic over here for sorting.
             }   
         });
+        // Makes Collection sort in reverseOrder
+        Collections.sort( list, Collections.reverseOrder() );
 
         // Array sorting in reverse order
         Arrays.sort(arr, Collections.reverseOrder()); 
@@ -83,13 +87,16 @@ class ArrayBasics{
                 add(10);
                 add(100);
             }
-        }
+        };
                 // OR
         // ArrayList<Integer> initializeList = new ArrayList<>( Arrays.asList( 1,10, 100 ) ); 
 
 
-        // If one wants to compare list of an arrays [ [],[],[] ]
-        // List<int[]> list = new ArrayList<>();
+        // If one wants to compare list of an arrays [ [],[],[] ]        
+        // -1 : o1 < o2
+        // 0 : o1 == o2
+        // +1 : o1 > o2
+
         // HACK: https://stackoverflow.com/questions/19596950/sort-an-arraylist-of-integer-arrays
         Collections.sort( list, (Integer[] a, Integer[] b) ->{
             // below will compare last element present in the arrays

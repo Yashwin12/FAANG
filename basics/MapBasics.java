@@ -9,6 +9,12 @@ class MapBasics{
     public static void main (String[] args){
 
         HashMap<String, String> hashMapObj = new HashMap<>();
+
+        // 0) Initialize a map with key-values
+        Map<String, String> myMap = new HashMap<String, String>() {{
+            put("a", "b");
+            put("c", "d");
+        }};
         
         // 1) Associates the specified value with the specified key in this map.
         hashMapObj.put("key1", "one");
@@ -72,7 +78,7 @@ class MapBasics{
         Map<Integer, Integer> m = new TreeMap<>(); 
 
         // 12)  HashMap.equals() method compares two hashmaps by key-value pairs. It means both hashmap instances must have exactly same key-value pairs and both must be of same size.    
-        HashMap.equals(copy);
+        hashMapObj.equals(copy);
 
 
         // 13) This would give size of the current map.

@@ -124,6 +124,7 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
 // HACK: https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy
 // HACK:https://www.cs.utexas.edu/~scottm/cs307/handouts/deepCopying.htm
 // HACK: https://dzone.com/articles/java-copy-shallow-vs-deep-in-which-you-will-swim
+// HACK: https://stackoverflow.com/questions/715650/how-to-clone-arraylist-and-also-clone-its-contents
 24) Shallow-copy vs deep-copy
     A shallow copy of an object copies the ‘main’ object, but doesn’t copy the inner objects. The ‘inner objects’ are shared between the original object and its copy.
 
@@ -152,6 +153,18 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
     32                  4,294,967,296                        4 GB
     40              1,099,511,627,776   1 trillion           1 TB
 
+// HACK: https://www.youtube.com/watch?v=Zq4upTEaQyM
+28) Backtracking: (Refer 22.java)
+    a) Choices
+    b) Constraints
+    c) Goal
+
+29) CompareTo (function used in Comparator): 
+    Comparator by default sort it in "ascending" order.
+    // -1 : o1 < o2 ( o1 should appear first )
+    // 0 : o1 == o2
+    // +1 : o1 > o2 ( o2 should appear first )
+
 QUESTION JARGON
     1) Increasing vs Non-decreasing: 
     Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it
@@ -161,7 +174,6 @@ QUESTION JARGON
 
     3) One pass OR Single-pass: 
     In computing, a one-pass algorithm is a streaming algorithm which reads its input exactly once, in order, without unbounded buffering. A one-pass algorithm generally requires O(n) time and less than O(n) storage (typically O(1)), where n is the size of the input.
-
 
 STUDY STRATEGY:
 

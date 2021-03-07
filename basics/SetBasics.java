@@ -8,6 +8,14 @@ public class SetBasics {
     public static void main( String[] args ){
         Set<Integer> set = new HashSet<>();
 
+        // 0) Initialize a set 
+        Set<String> h = new HashSet<>(Arrays.asList("a", "b"));
+        // OR
+        Set<String> h1 = new HashSet<String>() {{
+            add("a");
+            add("b");
+        }};
+
         //  1) Add elements to set
         set.add(21);
         set.add(22);
