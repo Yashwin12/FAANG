@@ -64,6 +64,7 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
     return random.nextInt(max - min) + min;
 
 // HACK: https://www.youtube.com/watch?v=_i_nTcwyh-E
+// HACK: https://www.youtube.com/watch?v=jgiZlGzXMBw&t=799s
 15) Top-down vs bottom-up approach:
     Top-down => Recursion + memoization: 
         fib(4): fib(4) => fib(3) => fib(2) => fib(1) => fib(0) (Base Case)
