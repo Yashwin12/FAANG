@@ -104,6 +104,7 @@ class ArrayBasics{
         });
 
         // This is to convert List<int[]> to 2D matrix! 
+        // BEWARE: int[] is actually an object, not a primitive.
         // HACK: https://stackoverflow.com/questions/47135950/how-can-i-convert-a-listint-to-a-2d-array/47136005#47136005
         List<int[]> lists = new ArrayList<>();
         int[][] converted = lists.toArray( new int[lists.size()][] );

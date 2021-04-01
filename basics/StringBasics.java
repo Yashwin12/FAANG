@@ -62,6 +62,9 @@ public class StringBasics {
 
         //Returns a string that is a substring of this string str1. The substring begins at the specified beginIndex and extends to the character at index endIndex - 1. Thus the length of the substring is endIndex-beginIndex.
         str1.substring(beginIndex, endIndex);  
-        
+
+        // Returns the string representation of the char argument.
+        String.valueOf('c');
+
     }
 }

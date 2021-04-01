@@ -31,5 +31,9 @@ public class CharacterBasics {
         Character.isWhitespace(ch);
 
         Character.isUpperCase(ch);
+
+        // (int) '1'  would bring the '1' in ASCII. 
+        // the numeric value of the character, as a nonnegative int value;
+        Character.getNumericValue('1');         
     }
 }

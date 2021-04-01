@@ -84,7 +84,5 @@ class MapBasics{
         // 13) This would give size of the current map.
         hashMapObj.keySet().size();
 
-        
-
     }
 }

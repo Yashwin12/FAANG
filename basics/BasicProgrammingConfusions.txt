@@ -166,6 +166,34 @@ Arrays will usually be faster than Collections classes. Arrays are faster when t
     // 0 : o1 == o2
     // +1 : o1 > o2 ( o2 should appear first )
 
+30) Integer.valueOf() returns an Integer object, while Integer.parseInt() returns an int primitive.
+    Integer: Integer.valueOf( str );
+    int: Integer.parseInt( str );
+
+// HACK: https://stackoverflow.com/questions/15505508/what-is-the-difference-between-string-substring-and-string-subsequence
+31) Substring vs Subsequence in String:
+    Substring: It is a continuous part or subpart of a string.
+    Subsequence: It is the part of a string or sequence, that might be continuous or not but the order of the elements is maintained
+
+//HACK: https://stackoverflow.com/questions/19734154/followers-following-database-structure/19734232
+    https://stackoverflow.com/questions/4895809/database-design-for-followers-and-followings
+32) Store Facebook/ twitter followers-following in the table: 
+    Have 2 seperate tables. Users and User_Followers. Users will store user information. User_Followers will have below:
+
+        userId - followerId combiation is unique. So, primaryKey would be (userId, followerId)
+
+// HACK: https://stackoverflow.com/questions/2878272/when-should-i-use-primary-key-or-index
+33) Primary key vs Indexes:
+    A table can only have one primary key (with multiple columns as done in point #32), but several indexes.
+
+    A primary key is unique, whereas an index does not have to be unique. Therefore, the value of the primary key identifies a record in a table, the value of the index not necessarily.
+
+    Primary keys usually are automatically indexed - if you create a primary key, no need to create an index on the same column(s).
+
+// HACK: https://medium.com/system-design-blog/long-polling-vs-websockets-vs-server-sent-events-c43ba96df7c1
+34) Websockets vs Long Polling: 
+    
+
 QUESTION JARGON
     1) Increasing vs Non-decreasing: 
     Increasing means that every element is greater than the one before it. Non-decreasing means that no element is less than the element before it, or in other words: that every element is greater than or equal to the one before it

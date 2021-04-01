@@ -158,3 +158,34 @@ Find more inspiration for questions in:
 
 1. https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
 2. https://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/
+
+
+=========================
+Grokking the behaviroal interview
+
+1) What sort of tangible changes has this organization made in regards to promoting gender diversity?
+2) What are the most exciting projects you’ve worked on here?
+3) What do you like most about the organization?
+4) What would you change about the organization?
+5) How has the organization changed since you’ve joined?
+6) What do you like most about working here?
+7) Can you describe the organization’s overall management style and the type of person who usually does well here?
+8) What excites you the most about the organization’s future?
+9) If you could change one thing about the organization, what would it be?
+10) Does the organization have any traditions or rituals that you like?
+11) Where do you see the organization in three years and how would I contribute to that if I’m hired for this role?
+12) What is a challenge the organization is facing right now and how could I contribute to overcoming it?
+13) In what ways might this role change in the next year?
+14) What would the onboarding process be like for this role?
+15) What can you tell me about the position that isn’t in the job description?
+16) Do you expect to do more hiring in this group in the next six months?
+17) What surprised you about the organization after you started working here?
+18) What has allowed you to be successful here?
+19) How does the organization respond to failure?
+20) Tell me about your most successful employees. What do they do that really sets them apart?
+21) What haven’t I asked about that most candidates want to know?
+22) If you were interviewing with your organization again, what questions would you be asking?
+23) (If this is your future boss) How would you describe your management style?
+24) What’s your timeline for the next steps?
+25) Are there resources I could review in advance to get a head start on the learning curve?
+26) VERY BOLD: Is there anything about my background or resume that makes you question whether or not I am a good fit for this role?

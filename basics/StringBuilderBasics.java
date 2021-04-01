@@ -33,6 +33,10 @@ public class StringBuilderBasics {
         str1.length();
         str1.reverse();
         str1.substring(start, end);
+
+        str.setCharAt(index, ch);
+
+        str.insert(dstOffset, s);
         
     }
 }
